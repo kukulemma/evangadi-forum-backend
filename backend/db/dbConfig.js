@@ -6,7 +6,6 @@ const dbConnection = mysql2.createPool({
   host: process.env.DB_HOST,
   password: process.env.PASSWORD,
   connectionLimit: 10,
-  port :3039
 });
 
 module.exports = dbConnection.promise();
